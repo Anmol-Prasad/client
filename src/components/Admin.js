@@ -77,7 +77,9 @@ const Admin = () => {
   const registerProperty = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/property", { ...user });
+      await axios.post("https://firevolrealestate.herokuapp.com/api/property", {
+        ...user,
+      });
       alert("Property has been successfully listed");
     } catch (err) {
       alert(err.response.data.msg);
