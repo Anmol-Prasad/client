@@ -82,7 +82,6 @@ const Login = () => {
       await axios.post("https://firevolrealestate.herokuapp.com/admin/login", {
         ...user,
       });
-      alert("Login");
       history.push("/tRybHtBDCtUo1TbX5Rhs");
     } catch (err) {
       console.log(err.response.data.msg);
