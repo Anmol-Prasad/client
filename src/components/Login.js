@@ -65,7 +65,6 @@ const Login = () => {
   const classes = useStyle();
   const history = useHistory();
   dotenv.config();
-
   const [user, setUser] = useState({
     email: "",
     password: "",

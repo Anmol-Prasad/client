@@ -7,8 +7,10 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Admin from "./components/Admin";
 import Login from "./components/Login";
+import dotenv from "dotenv";
 
 function App() {
+  dotenv.config();
   return (
     <>
       <GlobalStyle />
